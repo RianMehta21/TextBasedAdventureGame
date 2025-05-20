@@ -1,0 +1,212 @@
+{
+  "locations" : [
+    {
+      "id" : 1,
+      "name" : "Robarts Library",
+      "brief_description" : "You are in the massive Robarts Library, surrounded by books and students studying.",
+      "long_description" : "The smell of old books fills the air. You see students buried in their laptops, some taking notes, others lost in thought.\nYou were working on your code here with your friend yesterday. Maybe you left something here?",
+      "available_commands" : {
+        "go north" : 2
+      },
+      "items" : [
+        "keycard"
+      ]
+    },
+    {
+      "id" : 2,
+      "name" : "Goldring Gym",
+      "brief_description" : "You are at Goldring, you can see varsity athletes playing basketball and volleyball.",
+      "long_description" : "You hear the sounds of sneakers squeaking and weights clanking.\nThe library and the Mining Building where you had your test the day before are nearby.",
+      "available_commands" : {
+        "go south" : 1,
+        "go west" : 3
+      },
+      "items" : ["water_bottle"]
+    },
+    {
+      "id" : 3,
+      "name" : "Lassonde Mining Building",
+      "brief_description" : "You are in the old Lassonde Mining Building. You had a MAT137 test here day before",
+      "long_description" : "You are in an old academic building. The hallways echo with footsteps.\nMyhal is nearby and Goldring is further east, but you see a unlit lantern available for the taking.",
+      "available_commands" : {
+        "go east" : 2,
+        "go west" : 4
+      },
+      "items" : [
+        "unlit_lantern"
+      ]
+    },
+    {
+      "id" : 4,
+      "name" : "Myhal",
+      "brief_description" : "You are in Myhal. You had CS110 lectures here last semester, but you haven't been here for a while",
+      "long_description" : "You are at the center of campus with many places nearby.\nYou see some students working on their code by the window and other's rushing to their lectures. Your USB is corrupted, maybe one of them can help? ",
+      "available_commands" : {
+        "go west" : 9,
+        "go north" : 5,
+        "go south" : 8,
+        "go east" : 3,
+        "puzzle" : null
+      },
+      "items" : []
+    },
+    {
+      "id" : 5,
+      "name" : "Queen's Park",
+      "brief_description" : "You are in Queen's Park. You walk through here every day.",
+      "long_description" : "You look around and see the once green park now covered in snow. Joggers and pedestrians pass by. The Athletic Center is just up ahead.",
+      "available_commands" : {
+        "go north" : 6,
+        "go south" : 4
+      },
+      "items" : ["map"]
+    },
+    {
+      "id" : 6,
+      "name" : "Athletic Center",
+      "brief_description" : "You are in the Athletic Center, you could've gotten a quick workout in if you weren't on a time crunch.",
+      "long_description" : "You were here last night for an intramural basketball game which you lost.\nYou remember drinking water from your favorite mug. In the distance you see an intriguing room.",
+      "available_commands" : {
+        "go south" : 5,
+        "go west" : 7
+      },
+      "items" : [
+        "lucky_mug"
+      ]
+    },
+    {
+      "id" : 7,
+      "name" : "Dark Room",
+      "brief_description" : "You are in a dark room",
+      "long_description" : "There is no light in this room. You feel around to find a switch with no luck. If only you had some light.",
+      "available_commands" : {
+        "go east" : 6,
+        "puzzle" : null
+      },
+      "items" : []
+    },
+    {
+      "id" : 8,
+      "name" : "Coffee Shop",
+      "brief_description" : "You are in a Coffee Shop. You were here yesterday to take a short coffee break from working.",
+      "long_description" : "The smell of freshly brewed coffee fills the air. Baristas call out orders.\nYou remember that when you were here yesterday someone borrowed your charger.",
+      "available_commands" : {
+        "go north" : 4
+      },
+      "items" : [
+        "laptop_charger"
+      ]
+    },
+    {
+      "id" : 9,
+      "name" : "Dining Hall",
+      "brief_description" : "You are in the Canada Room Dining Hall. You haven't eaten in 2 days, but there is no time.",
+      "long_description" : "Students line up for food. The sound of chatter and clinking plates surrounds you. Your friends wave hi. Your room is really near. ",
+      "available_commands" : {
+        "go east" : 4,
+        "go into my room" : 10
+      },
+      "items" : []
+    },
+    {
+      "id" : 10,
+      "name" : "Your Room",
+      "brief_description" : "You are back in your room.",
+      "long_description" : "Your desk is cluttered with books and notes, maybe something here could be of use? \nYour bed looks extremely inviting. If you are leaving, be careful not to lock yourself out.",
+      "available_commands" : {
+        "go east" : 9
+      },
+      "items" : [
+        "lighter", "old_notes"
+      ]
+    }
+  ],
+  "items" : [
+    {
+      "name" : "usb",
+      "start_position" : 4,
+      "target_position" : 10,
+      "target_points" : 40
+    },
+    {
+      "name" : "laptop_charger",
+      "start_position" : 8,
+      "target_position" : 10,
+      "target_points" : 30
+    },
+    {
+      "name" : "lucky_mug",
+      "start_position" : 6,
+      "target_position" : 10,
+      "target_points" : 60
+    },
+    {
+      "name" : "keycard",
+      "start_position" : 1,
+      "target_position" : -1,
+      "target_points" : 0
+    },
+    {
+      "name" : "unlit_lantern",
+      "start_position" : 3,
+      "target_position" : 7,
+      "target_points" : 10
+    },
+    {
+      "name" : "lighter",
+      "start_position" : 10,
+      "target_position" : 7,
+      "target_points" : 10
+    },
+    {
+      "name" : "money",
+      "start_position" : 7,
+      "target_position" : -1,
+      "target_points" : 100
+    },
+    {
+      "name" : "old_notes",
+      "start_position" : 10,
+      "target_position" : -1,
+      "target_points" : 0
+    },
+    {
+      "name" : "water_bottle",
+      "start_position" : 2,
+      "target_position" : -1,
+      "target_points" : 0
+    },
+    {
+      "name": "map",
+      "start_position": 5,
+      "target_position": -1,
+      "target_points": 0
+    }
+  ],
+  "puzzles" : [
+    {
+      "location_id" : 4,
+      "setup" : "Your USB has been corrupted, luckily you see your class's tech genius. He agrees to fix your USB if you help him with his homework.",
+      "finish" : "Your classmate fixed your USB and all your game code files are still there. You thank him and continue on your journey.",
+      "puzzle" : [
+        "I have keys, but no locks. Space, but no rooms. You can enter, but you can’t go outside. What am I?",
+        "keyboard",
+        "usb"
+      ],
+      "points" : 50,
+      "reject" : "He's always here if you change your mind. "
+    },
+    {
+      "location_id" : 7,
+      "setup" : "You see a locked box, there is a 5 digit lock with a note attached to it. ",
+      "finish" : "You unlock the box and see $100. You take it and continue on your journey. ",
+      "puzzle" : [
+        "1. It is a 5-digit number whose digits sum up to 12. \n2. The third digit is the first digit plus the fifth. \n3. Two of the digits are zero. \n4. Multiplying the third and fifth digit gives 30.",
+        "10605",
+        "money"
+      ],
+      "points" : 70,
+      "reject" : "The locked box is always here if you want to try again. "
+    }
+  ]
+}
